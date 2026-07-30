@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="蔡雨洋｜AI Infrastructure、LLM 推理系统与高性能计算。" />
+    <meta property="og:title" content="蔡雨洋｜AI Infrastructure" />
+    <meta property="og:description" content="LLM 推理系统 · 高性能计算 · 分布式系统" />
+    <meta property="og:image" content="https://newmancai.github.io/assets/og.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>蔡雨洋｜AI Infrastructure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="site-title">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">AI INFRASTRUCTURE · LLM INFERENCE · HPC</p>
+            <h1 id="site-title">蔡雨洋</h1>
+            <p class="lede">面向大模型推理、分布式运行时与高性能计算的工程实践者。</p>
+            <div class="actions">
+              <a class="button primary" href="resume/caiyuyang-ai-infra-resume.pdf" target="_blank" rel="noreferrer">查看简历 PDF</a>
+              <a class="button secondary" href="https://github.com/newmancai" target="_blank" rel="noreferrer">GitHub 主页</a>
+            </div>
+            <p class="contact"><a href="mailto:ycai07737@gmail.com">ycai07737@gmail.com</a><span>·</span>东南大学｜2027 届</p>
+          </div>
+          <img class="portrait" src="assets/caiyuyang-headshot.png" alt="蔡雨洋职业头像" />
+        </div>
+      </section>
+
+      <section class="wrap section" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="eyebrow">FOCUS</p>
+          <h2 id="focus-title">工程关注点</h2>
+        </div>
+        <div class="focus-grid">
+          <article><span>01</span><h3>LLM 推理与通信</h3><p>MoE Token Dispatch/Combine、集合通信、KV Cache 与拓扑感知的数据路径优化。</p></article>
+          <article><span>02</span><h3>高性能算子</h3><p>基于 Roofline 分析微内核、缓存驻留、量化数据通路与动态 shape 调度。</p></article>
+          <article><span>03</span><h3>数值计算系统</h3><p>面向稀疏求解与大规模多通道建模的并行分解、质量门与端到端性能工程。</p></article>
+        </div>
+      </section>
+
+      <section class="wrap section projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2 id="projects-title">代表经历</h2>
+        </div>
+        <article class="project">
+          <div class="project-meta"><span>华为</span><time>2026.06–至今</time></div>
+          <h3>HPC / AI Infra 实习生</h3>
+          <p>参与 DeepSeek V3/R1 MoE 通信、鲲鹏 920F SME INT8 IGEMM 与并行运行时优化；围绕 RDMA、数据通路、缓存层次与不均衡调度定位性能瓶颈。</p>
+          <p class="evidence">Decode IGEMM 内核有效带宽 320–360 GB/s，为 400 GB/s Stream 基准的 80%–90%。</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>科研项目</span><time>2025.07–2026.04</time></div>
+          <h3>随机化稀疏求解与性能工程</h3>
+          <p>拆解 MUMPS BLR 的 front 筛选、tile、RRQR、低秩算子与重压缩链路，联合分析压缩机会、任务粒度、线程团队和数据搬运。</p>
+          <p class="evidence">24 核配置下，8 MPI × 3 OMP 将 wall time 从 16.73 s 降至 10.98 s（1.52×，W1≈10⁻¹⁴）。</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>科研项目</span><time>2024.09–至今</time></div>
+          <h3>大规模多通道数值建模引擎</h3>
+          <p>将 MATLAB 串行 QR/VF 链路重构为 C++17 多阶段并行引擎，以低秩投影、并行分解和 I/O 数据路径控制总时延与拟合误差。</p>
+          <p class="evidence">229 端口 graphs：26,335 通道压至 rank 67，误差 0.358%，总时延 1.95 s。</p>
+        </article>
+      </section>
+
+      <section class="wrap section note" aria-labelledby="note-title">
+        <p class="eyebrow">NOW</p>
+        <h2 id="note-title">持续建设中</h2>
+        <p>正在参与 MiniCPM-o 4.5 昇腾 NPU 推理适配与 benchmark 链路建设，以及 SGLang-Omni / vLLM Meetup 推理系统社区协作。</p>
+      </section>
+    </main>
+    <footer><div class="wrap">© 2026 蔡雨洋 · Built for open, verifiable engineering work.</div></footer>
+  </body>
+</html>
