@@ -3,47 +3,297 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="蔡雨洋｜AI Infrastructure、LLM 推理系统与高性能计算。" />
+    <meta
+      name="description"
+      content="蔡雨洋的 AI Infrastructure 个人主页：LLM 推理系统、高性能计算与可验证的系统工程。"
+    />
+    <meta name="theme-color" content="#fcfcfb" />
     <meta property="og:title" content="蔡雨洋｜AI Infrastructure" />
-    <meta property="og:description" content="LLM 推理系统 · 高性能计算 · 分布式系统" />
+    <meta
+      property="og:description"
+      content="LLM inference systems, high-performance computing, and verifiable systems work."
+    />
     <meta property="og:image" content="https://newmancai.github.io/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Cai Yuyang — AI Infrastructure, LLM Inference Systems, HPC" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://newmancai.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <title>蔡雨洋｜AI Infrastructure</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet" />
+    <meta name="twitter:title" content="蔡雨洋｜AI Infrastructure" />
+    <meta
+      name="twitter:description"
+      content="LLM inference systems, high-performance computing, and verifiable systems work."
+    />
+    <meta name="twitter:image" content="https://newmancai.github.io/assets/og.png" />
+    <title>蔡雨洋｜AI Infrastructure &amp; LLM Systems</title>
+    <link rel="canonical" href="https://newmancai.github.io/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#content">跳到正文</a>
+
     <header class="site-header">
-      <div class="wrap nav"><a class="brand" href="#top">CY<span>.</span></a><nav aria-label="页面导航"><a href="#focus">关注点</a><a href="#work">经历</a><a href="#community">社区</a></nav><a class="nav-resume" href="resume/caiyuyang-ai-infra-resume.pdf" target="_blank" rel="noreferrer">简历 PDF ↗</a></div>
+      <div class="shell nav-row">
+        <a class="wordmark" href="#top" aria-label="返回首页">
+          <span>蔡雨洋</span>
+          <small>CAI YUYANG</small>
+        </a>
+        <nav class="primary-nav" aria-label="页面导航">
+          <a href="#systems">Systems</a>
+          <a href="#experience">Experience</a>
+          <a href="#research">Research</a>
+          <a href="#links">Links</a>
+          <a href="https://github.com/newmancai" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="resume-link" href="resume/caiyuyang-ai-infra-resume.pdf" target="_blank" rel="noreferrer">Resume PDF ↗</a>
+        </nav>
+      </div>
     </header>
-    <main id="top">
-      <section class="hero" aria-labelledby="site-title">
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="wrap hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow light">AI INFRASTRUCTURE / LLM INFERENCE / HPC</p>
-            <h1 id="site-title">蔡雨洋</h1>
-            <p class="lede">将复杂计算链路变成<br /><strong>可测、可调、可扩展</strong>的系统。</p>
-            <p class="intro">关注大模型推理、分布式运行时与高性能计算；从数据路径、算子选择到数值质量门，持续在真实系统中定位关键路径。</p>
-            <div class="actions"><a class="button primary" href="resume/caiyuyang-ai-infra-resume.pdf" target="_blank" rel="noreferrer">查看完整简历 <span>↗</span></a><a class="button secondary" href="https://github.com/newmancai" target="_blank" rel="noreferrer">GitHub 主页 <span>↗</span></a></div>
-            <p class="contact"><a href="mailto:[email-redacted]">[email-redacted]</a><i></i>东南大学 · 2027 届</p>
+
+    <main id="content">
+      <section id="top" class="hero shell" aria-labelledby="site-title">
+        <div class="hero-copy">
+          <p class="kicker">AI INFRASTRUCTURE · LLM SERVING · HPC</p>
+          <h1 id="site-title">蔡雨洋</h1>
+          <p class="hero-statement">把推理链路拆到可验证的内核、数据路径与运行时。</p>
+          <p class="hero-intro">
+            东南大学控制工程硕士研究生，现为华为 HPC / AI Infra 开源实习生。关注 LLM
+            推理系统、高性能计算与数值系统，在真实硬件上连接 kernel、runtime 与通信路径。
+          </p>
+          <div class="hero-actions" aria-label="主要链接">
+            <a class="action-primary" href="#systems">Selected systems ↓</a>
+            <a href="resume/caiyuyang-ai-infra-resume.pdf" target="_blank" rel="noreferrer">打开简历 ↗</a>
+            <a href="mailto:[email-redacted]">Email ↗</a>
           </div>
-          <aside class="profile-card" aria-label="个人信息卡片"><img class="portrait" src="assets/caiyuyang-headshot.png" alt="蔡雨洋职业头像" /><div><p class="profile-label">CURRENT TRACK</p><p class="profile-title">AI Infra<br />Engineer</p></div><dl><div><dt>Focus</dt><dd>Serving &amp; Runtime</dd></div><div><dt>Based in</dt><dd>Nanjing, China</dd></div></dl></aside>
+          <p class="hero-meta">M.Eng. 2027</p>
         </div>
-        <div class="wrap signal-row" aria-label="推理基础设施信号"><div><strong>320–360</strong><span>GB/s · Decode INT8 IGEMM</span></div><div><strong>128 Experts</strong><span>DeepSeek V3/R1 · MoE</span></div><div><strong>EP = 256</strong><span>Token Dispatch / Combine</span></div></div>
+
+        <figure class="portrait-wrap">
+          <img src="assets/caiyuyang-headshot.jpg" alt="蔡雨洋职业头像" width="384" height="480" />
+          <figcaption>
+            <span>AI Infra / Systems</span>
+            <span>SEU</span>
+          </figcaption>
+        </figure>
       </section>
 
-      <section id="focus" class="wrap section" aria-labelledby="focus-title"><div class="section-heading"><p class="eyebrow">01 / FOCUS</p><h2 id="focus-title">以系统视角处理计算问题</h2><p>从算子、数据移动、并行分解到质量约束，而不止于单点性能。</p></div><div class="focus-grid"><article><span>01</span><h3>LLM 推理与通信</h3><p>MoE Token Dispatch/Combine、集合通信、KV Cache 与拓扑感知的数据路径优化。</p></article><article><span>02</span><h3>高性能算子</h3><p>基于 Roofline 分析微内核、缓存驻留、量化数据通路与动态 shape 调度。</p></article><article><span>03</span><h3>数值计算系统</h3><p>面向稀疏求解与大规模多通道建模的并行分解、质量门与端到端性能工程。</p></article></div></section>
+      <section id="systems" class="section shell" aria-labelledby="systems-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">01 / SELECTED SYSTEMS</p>
+            <h2 id="systems-title">代表系统工作</h2>
+          </div>
+          <p>每个结果都保留系统约束、本人动作与测量口径。</p>
+        </div>
 
-      <section class="wrap section" aria-labelledby="guidance-title"><div class="section-heading"><p class="eyebrow">ACADEMIC GUIDANCE</p><h2 id="guidance-title">学术指导</h2><p>以可核验的学术背景支撑长期研究训练。</p></div><div class="focus-grid"><article><span>MENTOR</span><h3>孙长银</h3><p>硕士生导师 · 安徽大学校长 · 国家杰青 · 国家自然科学奖二等奖获得者</p></article><article><span>CO-ADVISOR</span><h3>牛丹</h3><p>东南大学自动化学院副院长、副教授、博士生导师 · 入选国家级青年人才项目</p></article></div></section>
+        <div class="system-list">
+          <article class="system-row">
+            <div class="system-meta">
+              <p>Huawei · HPC / AI Infra</p>
+              <time datetime="2026-06">2026.06—Present</time>
+            </div>
+            <div class="system-body">
+              <h3>SGLang × DeepSeek V3/R1 on Kunpeng 920F</h3>
+              <p>
+                独立实现 SME BF16 GEMM 的 Pack、Cache Blocking 与 2VL×2VL ZA/MOPA 微内核；进一步主导
+                W8A8 Decode 跨 SGLang→C++ Adapter→KuTACC 的复测归因，完成 MLA TP-8 重排验收，并协助
+                MoE 通信链路联调与性能复核。
+              </p>
+              <p class="evidence">
+                M/N/K=4096/2048/4096 核心计算达 <strong>25.47 TFLOPS</strong>，约为峰值的 85%；端到端
+                profiling 同时定位 Pack / 内存分配占时 53%。
+              </p>
+              <a class="proof-link" href="https://gitcode.com/kunpengcompute/kutacc/tree/br_dist_infer" target="_blank" rel="noreferrer">KuTACC work branch ↗</a>
+            </div>
+          </article>
 
-      <section id="work" class="wrap section work" aria-labelledby="work-title"><div class="section-heading"><p class="eyebrow">02 / SELECTED WORK</p><h2 id="work-title">代表经历</h2></div><div class="project-list"><article class="project featured"><div class="project-index">01</div><div class="project-body"><div class="project-meta"><span>华为 · HPC / AI Infra 实习生</span><time>2026.06–至今</time></div><h3>大模型推理通信与算子路径</h3><p>参与 DeepSeek V3/R1 MoE 通信、鲲鹏 920F SME INT8 IGEMM 与并行运行时优化；围绕 RDMA、数据通路、缓存层次与不均衡调度定位性能瓶颈。</p><p class="evidence">Decode IGEMM 内核有效带宽 320–360 GB/s，为 400 GB/s Stream 基准的 80%–90%。</p></div></article><article class="project"><div class="project-index">02</div><div class="project-body"><div class="project-meta"><span>华为赛道 · 在研</span><time>2026.07–至今</time></div><h3>MiniCPM-o 4.5 · vLLM-Omni 昇腾推理优化</h3><p>基于赛题分支与公开 910C profile，按 TTFP/RTF、Stage 0/1/2 队列和算子拆解全双工链路；针对 Stage 2 小 kernel、布局转换与缓存拼接，设计双 Die 映射、inner NPUGraph 和 layout/cache 重构的 A/B/A 实验卡。</p><p class="collaboration">个人 910C 优化收益待实测；公开 profile 不作为个人性能结果。</p></div></article><article class="project"><div class="project-index">03</div><div class="project-body"><div class="project-meta"><span>开源项目 · 腾讯犀牛鸟获奖 · 获奖比例 3%</span><time>2026.07–2026.08</time></div><h3>TencentDB Agent Memory · Recall 状态与 Prompt Cache</h3><p>修复动态 Recall 注入与历史写回不一致：以 append-only Ledger 原样持久化，DeepSeek V4 Pro cache hit 71.36%→99.53%。</p><p class="evidence">抑制重复 Recall 导致的上下文膨胀：按 ID/revision/content hash 去重并设 32k cap，50 轮回归保持稳定。</p></div></article><article class="project"><div class="project-index">04</div><div class="project-body"><div class="project-meta"><span>科研协作 · ICCAD 2026 一作</span><time>2025.07–2026.04</time></div><h3>随机化稀疏求解与性能工程</h3><p>围绕低秩压缩、并行求解与性能工程开展协作，关注任务粒度、数据搬运与数值稳定性。</p><p class="collaboration">合作：陈晓明（中国科学院计算技术研究所）。</p></div></article><article class="project"><div class="project-index">05</div><div class="project-body"><div class="project-meta"><span>科研协作</span><time>2024.09–2024.12</time></div><h3>大规模多通道数值建模引擎</h3><p>围绕多通道建模的低秩降维、公共极点迁移与并行数据路径开展协作。</p><p class="collaboration">合作：苏仰锋（复旦大学数学科学学院）。</p></div></article></div></section>
+          <article class="system-row">
+            <div class="system-meta">
+              <p>OpenBMB × Huawei Ascend Challenge · Top 5</p>
+              <time datetime="2026-07">2026.07—Present</time>
+            </div>
+            <div class="system-body">
+              <h3>vLLM-Omni Full-duplex Inference</h3>
+              <p>
+                主导精确前缀事务复用、Talker 图与状态生命周期重构，以及无需 Classifier-Free Guidance 的
+                Flow Student 蒸馏；将 ACL Graph 21→1，并把 20 层 Fused Infer Attention 更新下沉为 2 次
+                C++ 分组调用。
+              </p>
+              <p class="evidence">
+                完整性能配置下，端到端 Mean RTF 由 <strong>0.4435 降至 0.0795</strong>（-82.1%，5.58×）。
+              </p>
+              <a class="proof-link" href="https://github.com/newmancai/vllm-omni-minicpmo45-npu" target="_blank" rel="noreferrer">Optimization repository ↗</a>
+            </div>
+          </article>
 
-      <section id="community" class="community"><div class="wrap community-grid"><div><p class="eyebrow light">03 / COMMUNITY</p><h2>在推理系统社区<br />持续校准问题。</h2><p>参与技术交流，也将对实时多阶段生成与服务运行时的观察沉淀为可验证的系统问题。</p></div><article class="community-card"><div class="community-top"><span>SGLang-Omni / vLLM Meetup</span><time>2026.04–至今</time></div><h3>推理系统社区协作</h3><p>参与 SGLang-Omni、vLLM Meetup 与 WAIC LLM/Agent Night 的推理系统交流；围绕多阶段生成 / 全双工 runtime，梳理可写 SessionRequest、实时 tick 混合 prefill/decode 与滑动 KV 窗口。</p><div class="tag-row"><span>session-aware 调度</span><span>tail latency</span><span>KV window</span></div></article><article class="community-card compact"><div class="community-top"><span>北京大学未名超算队 × LCPU</span><time>2026.07–至今</time></div><h3>AI Infra Seminars · TileLang / B300</h3><p>完成 SAXPY、block 内归约与 softmax 三道 TileLang 算子题，均为 100 分 Accepted；在 NVIDIA B300 SXM6 环境中通过 Slurm 规范提交 GPU 任务。</p><div class="tag-row"><span>TileLang kernels</span><span>reduction</span><span>Slurm</span><span>B300 SXM6</span></div></article><blockquote class="quote"><p>“I would rather have questions that can't be answered than answers that can't be questioned.”</p><cite>Richard Phillips Feynman</cite></blockquote></div></section>
+          <article class="system-row">
+            <div class="system-meta">
+              <p>TencentDB Agent Memory · Open-source award · Top 3</p>
+              <time datetime="2026-07">2026.07—Present</time>
+            </div>
+            <div class="system-body">
+              <h3>Recall Runtime &amp; Memory Feedback Control</h3>
+              <p>
+                定位动态 Recall 在 provider 请求与持久化历史之间的不一致，独立实现 append-only Recall
+                Ledger；随后主导 PIVOT-Memory 影子反馈控制面，以校准弃权、Sidecar-only 和 fail-closed
+                约束自动干预。
+              </p>
+              <p class="evidence">
+                Provider-visible transcript 的 hash 一致性由 <strong>0/6 提升至 6/6</strong>，DeepSeek V4 Pro
+                cache hit 由 <strong>71.36% 提升至 99.53%</strong>。
+              </p>
+              <a class="proof-link" href="https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/627" target="_blank" rel="noreferrer">Early PR #627 ↗</a>
+            </div>
+          </article>
+
+          <article class="system-row">
+            <div class="system-meta">
+              <p>CUDA / CuTe · NVIDIA B300</p>
+              <span>Kernel benchmark</span>
+            </div>
+            <div class="system-body">
+              <h3>FlashKDA K2 Value-sliced Kernels</h3>
+              <p>
+                独立将 K2 沿 Value 维切分为 V16/V32/V64 CUDA/CuTe kernels，以 SM/L2/TMA/occupancy
+                评分并回退 V128；严格限定为 KDA 算子与状态链路优化，不外推为完整模型 serving 收益。
+              </p>
+              <p class="evidence">
+                B300 T4096 fixed forward 降时 <strong>9.1%–23.3%</strong>；4096 prefill+64×decode 的算子状态
+                链路降时 5.45%，output/state 位级一致。
+              </p>
+              <span class="proof-note">Correctness gate · output/state bitwise identical</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section shell" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">02 / EXPERIENCE</p>
+            <h2 id="experience-title">经历与教育</h2>
+          </div>
+          <p>职责边界与项目结果分开呈现，避免把团队上下文写成个人成果。</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-row">
+            <div class="timeline-meta">
+              <h3>华为｜HPC / AI Infra 开源实习生</h3>
+              <time datetime="2026-06">2026.06—Present</time>
+            </div>
+            <p>
+              独立完成 SME BF16 Kernel；主导 W8A8 Decode 复测归因；完成 MLA TP-8 重排验收；协助
+              MoE Gather-Pack→IGEMM→Dispatch/Combine 联调与性能复核。
+            </p>
+          </article>
+
+          <article class="timeline-row">
+            <div class="timeline-meta">
+              <h3>东南大学｜控制工程（电子信息）硕士</h3>
+              <time datetime="2024-09">2024.09—2027.06</time>
+            </div>
+            <p>研究方向：HPC + 人工智能；硕士生导师：孙长银教授（国家杰青）。</p>
+          </article>
+
+          <article class="timeline-row">
+            <div class="timeline-meta">
+              <h3>东南大学｜自动化（机器人工程）本科</h3>
+              <time datetime="2020-09">2020.09—2024.06</time>
+            </div>
+            <p>优秀毕业设计：RL + Transformer 约束决策。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="research" class="section shell" aria-labelledby="research-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">03 / RESEARCH &amp; OPEN SYSTEMS</p>
+            <h2 id="research-title">研究与开源协作</h2>
+          </div>
+          <p>把低秩、稀疏与社区协作放回具体算法、误差门和执行路径中。</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-item">
+            <p class="research-meta">
+              陈晓明（中科院计算所）× 周振亚（华大九天） · SolverChallenge 国三 · ICCAD 2026 一作
+            </p>
+            <h3>随机化稀疏计算</h3>
+            <p>
+              主导用随机投影预测秩，以独立误差证书守住精度、失配时回退 RRQR，将碎片化压缩重构为
+              GEMM 主导路径。
+            </p>
+            <p class="research-result">10 个 benchmark 较 CKTSO 几何平均 <strong>1.46×</strong>。</p>
+          </article>
+
+          <article class="research-item">
+            <p class="research-meta">CPIPC 创“芯”大赛国一 · ISEDA 2025</p>
+            <h3>LatentFit 共享低秩潜空间</h3>
+            <p>
+              主导按尾能量选秩，将 26,335 维通道压至 rank 67，并按形状分流 SVD/QR 与误差后端；393×
+              仅表示维度压缩，不作为端到端加速。
+            </p>
+            <p class="research-result">误差 <strong>0.358%</strong>，校验阶段提速 <strong>13.8×</strong>。</p>
+          </article>
+
+          <article class="research-item research-wide">
+            <p class="research-meta">SGLang-Omni / vLLM Meetup / 北大未名超算队 × LCPU</p>
+            <h3>Open-source &amp; Systems Community</h3>
+            <p>
+              参与 SGLang-Omni ASR PR/CI 同步，复核 CUDA Graph batch policy、continuous prefill/KV
+              Cache 与全双工调度；持续参与 vLLM Meetup 等推理系统技术交流。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="links" class="section shell" aria-labelledby="links-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">04 / CODE &amp; LINKS</p>
+            <h2 id="links-title">代码与证据入口</h2>
+          </div>
+          <p>没有空的 Blog 栏目；只展示现在可以直接阅读或核验的入口。</p>
+        </div>
+
+        <div class="link-list" aria-label="代码与项目链接">
+          <a class="link-item" href="https://github.com/newmancai" target="_blank" rel="noreferrer">
+            <span><strong>GitHub Profile</strong><small>Repositories and ongoing systems work</small></span><b>↗</b>
+          </a>
+          <a class="link-item" href="https://gitcode.com/kunpengcompute/kutacc/tree/br_dist_infer" target="_blank" rel="noreferrer">
+            <span><strong>KuTACC · br_dist_infer</strong><small>Huawei internship work branch</small></span><b>↗</b>
+          </a>
+          <a class="link-item" href="https://github.com/newmancai/vllm-omni-minicpmo45-npu" target="_blank" rel="noreferrer">
+            <span><strong>vLLM-Omni Optimization</strong><small>MiniCPM-o 4.5 NPU inference work</small></span><b>↗</b>
+          </a>
+          <a class="link-item" href="https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/627" target="_blank" rel="noreferrer">
+            <span><strong>TencentDB Agent Memory · Early PR #627</strong><small>Early public contribution; later feedback-control work is not implied</small></span><b>↗</b>
+          </a>
+        </div>
+
+        <aside class="resume-panel" aria-label="简历下载">
+          <div>
+            <p class="resume-label">RESUME / 简历</p>
+            <h3>一页中文 AI Infra 简历</h3>
+            <p>包含完整经历、ownership 边界、实验配置与量化结果。</p>
+          </div>
+          <div class="resume-actions">
+            <a href="resume/caiyuyang-ai-infra-resume.pdf" target="_blank" rel="noreferrer">Open PDF ↗</a>
+            <a href="resume/caiyuyang-ai-infra-resume.pdf" download>Download PDF ↓</a>
+          </div>
+        </aside>
+      </section>
     </main>
-    <footer><div class="wrap footer-row"><span>© 2026 蔡雨洋</span><span>Built for open, verifiable engineering work.</span><a href="mailto:[email-redacted]">Email ↗</a></div></footer>
+
+    <footer class="site-footer">
+      <div class="shell footer-row">
+        <span>© 2026 蔡雨洋</span>
+        <span>Kernel → Runtime → Communication</span>
+        <a href="mailto:[email-redacted]">[email-redacted] ↗</a>
+      </div>
+    </footer>
   </body>
 </html>
