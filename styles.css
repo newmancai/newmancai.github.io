@@ -215,18 +215,24 @@ h1 {
 }
 
 .portrait-wrap {
+  width: 176px;
   margin: 0;
+  justify-self: end;
 }
 
 .portrait-wrap img {
   display: block;
-  width: 176px;
-  aspect-ratio: 4 / 4.85;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center top;
-  border: 1px solid var(--line-strong);
-  border-radius: 10px;
+  object-position: 50% 18%;
+  border: 1px solid rgba(17, 19, 24, 0.12);
+  border-radius: 14px;
   background: var(--surface);
+  box-shadow:
+    0 16px 36px rgba(17, 19, 24, 0.1),
+    0 2px 8px rgba(17, 19, 24, 0.06);
 }
 
 .portrait-wrap figcaption {
@@ -535,10 +541,15 @@ h1 {
   .portrait-wrap {
     grid-row: 1;
     width: 122px;
+    justify-self: start;
   }
 
   .portrait-wrap img {
-    width: 122px;
+    width: 100%;
+  }
+
+  .portrait-wrap figcaption {
+    display: none;
   }
 
   .hero-copy {
