@@ -58,8 +58,8 @@
           <h1 id="site-title">蔡雨洋</h1>
           <p class="hero-statement">把推理链路拆到可验证的内核、数据路径与运行时。</p>
           <p class="hero-intro">
-            东南大学控制工程硕士研究生，现为华为 HPC / AI Infra 开源实习生。关注 LLM
-            推理系统、高性能计算与数值系统，在真实硬件上连接 kernel、runtime 与通信路径。
+            东南大学控制工程硕士研究生，曾获华为优秀实习生。关注 LLM 推理系统、
+            高性能计算与数值系统，在真实硬件上连接 kernel、runtime 与通信路径。
           </p>
           <div class="hero-actions" aria-label="主要链接">
             <a class="action-primary" href="#systems">Selected systems ↓</a>
@@ -90,8 +90,8 @@
         <div class="system-list">
           <article class="system-row">
             <div class="system-meta">
-              <p>Huawei · HPC / AI Infra</p>
-              <time datetime="2026-06">2026.06—Present</time>
+              <p>Huawei · HPC / AI Infra · Outstanding Intern</p>
+              <time datetime="2026-09">2026.06—2026.09</time>
             </div>
             <div class="system-body">
               <h3>SGLang × DeepSeek V3/R1 on Kunpeng 920F</h3>
@@ -110,8 +110,8 @@
 
           <article class="system-row">
             <div class="system-meta">
-              <p>OpenBMB × Huawei Ascend Challenge · Top 5</p>
-              <time datetime="2026-07">2026.07—Present</time>
+              <p>OpenBMB × Huawei Ascend Challenge · Long-term Top 3</p>
+              <time datetime="2026-09">2026.07—2026.09</time>
             </div>
             <div class="system-body">
               <h3>vLLM-Omni Full-duplex Inference</h3>
@@ -129,38 +129,37 @@
 
           <article class="system-row">
             <div class="system-meta">
-              <p>TencentDB Agent Memory · Open-source award · Top 3</p>
-              <time datetime="2026-07">2026.07—Present</time>
+              <p>TencentDB Agent Memory · Issue #120 Top 3</p>
+              <time datetime="2026-09">2026.07—2026.09</time>
             </div>
             <div class="system-body">
-              <h3>Recall Runtime &amp; Memory Feedback Control</h3>
+              <h3>Prompt Cache &amp; Project Memory Runtime</h3>
               <p>
-                定位动态 Recall 在 provider 请求与持久化历史之间的不一致，独立实现 append-only Recall
-                Ledger；随后主导 PIVOT-Memory 影子反馈控制面，以校准弃权、Sidecar-only 和 fail-closed
-                约束自动干预。
+                独立修复 Recall 请求/历史写回不一致导致的 prefix-cache 失效；继而推进零反馈
+                Memory Runtime，贯通执行轨迹、分层记忆与跨任务召回，按来源、类型和任务域约束写入。
               </p>
               <p class="evidence">
-                Provider-visible transcript 的 hash 一致性由 <strong>0/6 提升至 6/6</strong>，DeepSeek V4 Pro
-                cache hit 由 <strong>71.36% 提升至 99.53%</strong>。
+                DeepSeek V4 Pro cache hit 由 <strong>71.36% 提升至 99.53%</strong>；项目记忆实现、
+                测试索引与最终交付已固定到可复核 commit。
               </p>
-              <a class="proof-link" href="https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/627" target="_blank" rel="noreferrer">Early PR #627 ↗</a>
+              <a class="proof-link" href="https://github.com/newmancai/TencentDB-Agent-Memory/pull/4" target="_blank" rel="noreferrer">Project Memory delivery PR #4 ↗</a>
             </div>
           </article>
 
           <article class="system-row">
             <div class="system-meta">
               <p>CUDA / CuTe · NVIDIA B300</p>
-              <span>Kernel benchmark</span>
+              <time datetime="2026-09">2026.08—2026.09</time>
             </div>
             <div class="system-body">
-              <h3>FlashKDA K2 Value-sliced Kernels</h3>
+              <h3>FlashKDA Physical-aware Agentic Kernel Search</h3>
               <p>
-                独立将 K2 沿 Value 维切分为 V16/V32/V64 CUDA/CuTe kernels，以 SM/L2/TMA/occupancy
-                评分并回退 V128；严格限定为 KDA 算子与状态链路优化，不外推为完整模型 serving 收益。
+                主导构建传统 HMMA 与 Blackwell 原生 Tensor Core 双分支 Agent 搜索；以双层 IR 记录
+                程序状态、编译结果与回退证据，108 项测试通过。
               </p>
               <p class="evidence">
-                B300 T4096 fixed forward 降时 <strong>9.1%–23.3%</strong>；4096 prefill+64×decode 的算子状态
-                链路降时 5.45%，output/state 位级一致。
+                将 TP8 小 Head 的工作块由 12 扩展至 96，关键配置较官方降时 <strong>9.37%–26.10%</strong>，
+                output/state 位级一致。
               </p>
               <span class="proof-note">Correctness gate · output/state bitwise identical</span>
             </div>
@@ -180,8 +179,8 @@
         <div class="timeline">
           <article class="timeline-row">
             <div class="timeline-meta">
-              <h3>华为｜HPC / AI Infra 开源实习生</h3>
-              <time datetime="2026-06">2026.06—Present</time>
+              <h3>华为｜HPC / AI Infra 开源 · 优秀实习生</h3>
+              <time datetime="2026-09">2026.06—2026.09</time>
             </div>
             <p>
               独立完成 SME BF16 Kernel；主导 W8A8 Decode 复测归因；完成 MLA TP-8 重排验收；协助
@@ -221,10 +220,10 @@
             <p class="research-meta">
               陈晓明（中科院计算所）× 周振亚（华大九天） · SolverChallenge 国三 · ICCAD 2026 一作
             </p>
-            <h3>随机化稀疏计算</h3>
+            <h3>随机块低秩稀疏计算</h3>
             <p>
-              主导用随机投影预测秩，以独立误差证书守住精度、失配时回退 RRQR，将碎片化压缩重构为
-              GEMM 主导路径。
+              主导低秩因子直连 Schur 更新，避免中间稠密块；以固定布局 GEMM 与在线重压缩
+              控制秩增长。
             </p>
             <p class="research-result">10 个 benchmark 较 CKTSO 几何平均 <strong>1.46×</strong>。</p>
           </article>
@@ -233,8 +232,8 @@
             <p class="research-meta">CPIPC 创“芯”大赛国一 · ISEDA 2025</p>
             <h3>LatentFit 共享低秩潜空间</h3>
             <p>
-              主导按尾能量选秩，将 26,335 维通道压至 rank 67，并按形状分流 SVD/QR 与误差后端；393×
-              仅表示维度压缩，不作为端到端加速。
+              主导以截断 SVD 按尾能量选秩，在共享低秩潜空间求解后回投影，并按 shape 路由
+              SVD/QR；rank 67（393×）仅表示维度压缩。
             </p>
             <p class="research-result">误差 <strong>0.358%</strong>，校验阶段提速 <strong>13.8×</strong>。</p>
           </article>
@@ -243,8 +242,8 @@
             <p class="research-meta">SGLang-Omni / vLLM Meetup / 北大未名超算队 × LCPU</p>
             <h3>Open-source &amp; Systems Community</h3>
             <p>
-              参与 SGLang-Omni ASR PR/CI 同步，复核 CUDA Graph batch policy、continuous prefill/KV
-              Cache 与全双工调度；持续参与 vLLM Meetup 等推理系统技术交流。
+              参与 SGLang-Omni ASR/TTS PR/CI，并结合 MiniCPM-o/昇腾实践沉淀
+              Model×Hardware×Engine 接入方法与正确性、性能验收路径。
             </p>
           </article>
         </div>
@@ -271,6 +270,9 @@
           </a>
           <a class="link-item" href="https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/627" target="_blank" rel="noreferrer">
             <span><strong>TencentDB Agent Memory · Early PR #627</strong><small>Early public contribution; later feedback-control work is not implied</small></span><b>↗</b>
+          </a>
+          <a class="link-item" href="https://github.com/newmancai/TencentDB-Agent-Memory/pull/4" target="_blank" rel="noreferrer">
+            <span><strong>Project Memory · Delivery PR #4</strong><small>Fixed implementation, tests, report and review entry</small></span><b>↗</b>
           </a>
         </div>
 
